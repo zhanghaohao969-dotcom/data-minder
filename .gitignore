@@ -1,0 +1,23 @@
+# Local system/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+tokens.json
+
+# Runtime artifacts (do not upload private conversation/data caches)
+__pycache__/
+*.py[cod]
+.cache/
+logs/
+*.log
+runs/
+outputs/
