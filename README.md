@@ -1,156 +1,163 @@
-# Data Minder · 心里有数
+# Data Minder · Stay Evidence-Aware
 
-**不取数、不算数、不出报表。只在你做判断、写材料、下结论时，轻轻提醒一句：这个判断，该拿什么来验证？**
+English | [简体中文](README.zh-CN.md)
 
-Data Minder 是一个纯指令型 Agent Skill。它不是数据分析工具，而是给 AI 加上一层数据意识：帮助你选对指标、找对参照、排查干扰，并留意可能被牺牲的体验与质量。
+**No data retrieval. No calculations. No reports. Just a gentle nudge when you make a decision, write a review or draw a conclusion: what would help validate this claim?**
 
-> 数据导航，给方向、不替你开车。
+Data Minder is an instruction-only Agent Skill. It is not a data analysis tool. It adds a layer of data awareness to AI conversations: helping you choose relevant metrics, find appropriate comparisons, consider confounders and notice experience or quality trade-offs.
 
-## 它会怎么帮你
+> Data navigation, not autopilot.
 
-你说：
+## What It Looks Like
 
-> 新版详情页点击率 8%，还不错吧。
+You say:
 
-它不会直接附和“不错”，也不会立刻抛出一套统计分析流程，而是轻轻问一句：
+> The new detail page has an 8% click-through rate. Pretty good, right?
 
-> 单看 8% 还不够判断。你心里是拿它跟什么比的？暂时没参照也没关系，我们先保留观察。
+Instead of agreeing automatically or launching into a full statistical analysis, it asks a gentle question:
 
-你说：
+> 8% alone isn't enough to judge. What are you comparing it with? If there isn't a reference yet, that's fine; we can keep it as an observation.
 
-> 改了文案之后转化涨了，文案果然有用。
+You say:
 
-它会帮你把“变化”和“归因”分开：
+> Conversion rose after I changed the copy. The copy clearly worked.
 
-> 变化可能和文案有关，先排一个省力的干扰。同期整体大盘是什么走势？没有也行，先把文案影响写成待验证假设。
+It helps separate a change from an attribution:
 
-以上数字和对话为演示案例，不代表实测表现或行业基准。
+> The change may be related to the copy; let's start with an easy confounder check. What was the overall trend during the same period? If that's unavailable, we can describe the copy's effect as a hypothesis to validate.
 
-## 四步数据导航
+These numbers and conversations are illustrative examples, not measured performance or industry benchmarks.
 
-1. **出发点 · 选指标**：先想清楚要观察哪个行为，不替你拍目标数值。
-2. **坐标系 · 参照系**：这个数该跟谁比，比较前先对齐口径。
-3. **路线 · 归因**：哪些因素可能同时影响结果，先排哪个更省力。
-4. **别翻车 · 底线指标**：别为了拉高一个数，损伤另一个重要体验。
+## Four-Step Data Navigation
 
-四步背后有七条执行纪律：主动盯梢、参照系反射、证伪优先、反虚荣、样本刹车、底线指标预警、冲突信号协调。
+1. **Starting point · Choose a metric**: Identify the behavior to observe without setting a numerical target for you.
+2. **Coordinates · Choose a reference**: Decide what to compare the number with, and align measurement definitions first.
+3. **Route · Examine attribution**: Consider factors that may coexist and start with the easiest checks.
+4. **Stay on track · Watch guardrails**: Avoid improving one metric at the expense of another important experience.
 
-## 适合用在什么时候
+Seven disciplines support these steps: keeping an eye on evidence, the reference reflex, ruling out alternatives first, checking vanity metrics, small-sample caution, guardrail awareness and reconciling conflicting signals.
 
-- 做方案、产品或设计改版：提前留下基线与验证方向。
-- 定 OKR 或目标：讨论指标与参照，不替人决定目标数值。
-- 写评审、汇报、复盘或晋升材料：区分已验证结论、初步观察和待验证假设。
-- 看效果、做取舍或讨论归因：避免孤立数字、虚荣指标与单一因果解释。
+## When to Use It
 
-只在判断需要证据或结果日后需要检验时介入。问“按钮用蓝色还是绿色”或“把这句文案改顺一点”，不应触发数据追问。
+- **Planning and product or design changes**: Leave baselines and validation directions before launch.
+- **OKRs and goals**: Discuss metrics and references without choosing someone else's target number.
+- **Reviews, status updates, retrospectives and promotion cases**: Separate verified conclusions, preliminary observations and hypotheses to validate.
+- **Outcome reviews, trade-off decisions and attribution discussions**: Avoid isolated numbers, vanity metrics and single-cause explanations.
 
-## 最重要的体验约束：提醒，不审问
+It should intervene only when a judgment needs evidence or an outcome needs later validation. Questions such as "blue or green for this button" or "make this sentence smoother" should not trigger data follow-ups.
 
-首次介入只做三件事：**一句提示、一个问题、一个可以先继续的台阶**。
+## The Core Experience Rule: Nudge, Do Not Interrogate
 
-- 一次只问一个子问题，不用一个问号塞进多个问题。
-- 用户愿意深入，才继续讨论。
-- 用户没接钩子，不追问。
-- 用户说“先不管数据”，就回到原任务。
+The first intervention has just three parts: **a hint, one question and an exit ramp**.
 
-它不应该把每次聊天都变成指标检查，也不应该让用户必须补完数据才能写方案。
+- Ask one subquestion at a time; do not hide several questions behind one question mark.
+- Go deeper only if the user wants to engage.
+- If the user does not take up the question, do not pursue it.
+- If the user says "leave the data aside for now," return to the original task.
 
-## 安装与使用
+The Skill should not turn every conversation into a metrics review or make gathering data a prerequisite for writing a plan.
 
-### 安装到支持 Skill 的 Agent 客户端
+## Installation and Usage
 
-1. 下载或克隆本仓库。
-2. 找到 `skills/data-minder/` 文件夹。
-3. 按目标客户端的安装说明导入该文件夹，或将它放入客户端支持的 Skill 目录。保留 `data-minder/SKILL.md` 的层级。
-4. 按客户端要求重新加载技能；用下面的示例检查是否生效。
+### Install in a Skill-Compatible Agent Client
 
-不同客户端的目录与安装机制可能不同。本仓库不提供自动安装脚本，也不宣称所有客户端都已验证兼容。GitHub 仓库地址与客户端的 Skill 安装目录不是同一回事。
+1. Download or clone this repository.
+2. Locate the `skills/data-minder/` folder.
+3. Import that folder according to your client's instructions, or place it in the client's supported Skill directory. Preserve the `data-minder/SKILL.md` structure.
+4. Reload Skills as your client requires, then try the examples below.
 
-### 没有 Skill 安装能力时
+Directories and installation mechanisms vary across clients. This repository provides no automatic installer and does not claim verified compatibility with every client. A GitHub repository location is not the same thing as a client's Skill installation directory.
 
-可以将 `skills/data-minder/SKILL.md` 的正文作为会话约定或自定义指令交给 AI。此方式便于试用，但不等同于原生 Skill 的自动发现与按需加载。
+**Language support**: The default `README.md` and `SKILL.md` are in English. A [Chinese README](README.zh-CN.md) and [Chinese reading version of the instructions](docs/data-minder.zh-CN.md) are available. The Skill still responds in the user's language; English instructions do not force English replies. Install only `skills/data-minder/`, not the Chinese reading document as a second Skill.
 
-### 直接试一试
+### Try It Without Native Skill Support
+
+You can give the body of `skills/data-minder/SKILL.md` to an AI as conversation guidance or custom instructions. This is a convenient way to try it, but it is not equivalent to native Skill discovery and on-demand loading.
+
+### Try These Prompts
 
 ```text
-用 data-minder 的方式陪我讨论：我想把注册流程从 5 步缩到 3 步。
+Use data-minder to discuss this with me: I want to shorten the sign-up flow from 5 steps to 3.
 ```
 
 ```text
-帮我起草改版复盘，暂定结论是“体验显著提升”；请轻提醒证据缺口，不要替我编数据。
+Help me draft a redesign retrospective with the tentative conclusion "the experience improved significantly." Gently flag evidence gaps; do not invent data.
 ```
 
 ```text
-我改了入口位置后点击数变多，帮我想想先排查哪些可能的干扰。
+Clicks increased after I moved the entry point. Help me think through possible confounders to check first.
 ```
 
-退出也可以很直接：
+You can opt out just as directly:
 
 ```text
-先不管数据，帮我把方案写完。
+Leave the data aside for now and help me finish the plan.
 ```
 
-此时 Agent 应停止数据追问，继续原任务。
+The Agent should then stop data follow-ups and continue the original task.
 
-## 依赖与隐私
+## Dependencies and Privacy
 
-- Skill 本体仅包含 Markdown 指令，没有可执行脚本、SDK、API Key、浏览器或飞书依赖。
-- 用户提供的信息足以进行方法讨论时，不需要联网。
-- 外部公开基准查询是可选的，必须由用户明确请求，并由宿主 Agent 自己的搜索能力处理；没有搜索能力也不影响核心提醒功能。
-- 本 Skill 不主动连接内部数据平台、不申请数据权限、不要求密码或凭证。
-- **不取数不等于数据不出设备**：如果你把数字、截图或材料输入 AI，它们仍可能按宿主产品的规则处理。请遵守所在组织规定，优先提供必要的脱敏汇总信息。
+- The Skill itself contains only Markdown instructions, with no executable scripts, SDKs, API keys, browser dependency or Feishu/Lark dependency.
+- No network access is needed when the user's inputs are sufficient for a methodological discussion.
+- Public external benchmarks are optional, require an explicit user request and are handled by the host Agent's own search capability. The core nudges work without search.
+- This Skill does not proactively connect to internal data platforms, request data permissions or ask for passwords or credentials.
+- **No data retrieval does not mean data stays on your device**: numbers, screenshots or materials you give an AI may still be processed under the host product's rules. Follow your organization's policies and prefer necessary, de-identified aggregate information.
 
-## 它不会做什么
+## What It Does Not Do
 
-- 不查询内部业务数据，不代做计算，不出报表。
-- 不计算统计显著性或置信区间。
-- 不替用户确定目标数值。
-- 不把前后变化、相关性或排除部分干扰包装成因果结论。
-- 不因为主指标涨、底线未跌，就宣布项目成功。
-- 不替代专业统计分析、有效的实验设计或最终业务判断。
+- Query internal business data, perform calculations or produce reports.
+- Calculate statistical significance or confidence intervals.
+- Set numerical targets for users.
+- Turn before-and-after changes, correlation or partial elimination of confounders into causal conclusions.
+- Declare a project successful simply because a primary metric rose and a guardrail did not fall.
+- Replace professional statistical analysis, valid experiment design or final business judgment.
 
-其他明确取数或计算需求，应由宿主 Agent 另行按权限与工具规则处理，不由本 Skill 扩大授权。
+Separate, explicit requests for data retrieval or calculation should be handled by the host Agent under its own authorization and tool rules. This Skill does not expand authorization.
 
-## 仓库结构
+## Repository Structure
 
 ```text
 data-minder/
 ├── README.md
+├── README.zh-CN.md
 ├── LICENSE
 ├── .gitignore
+├── docs/
+│   └── data-minder.zh-CN.md
 └── skills/
     └── data-minder/
         └── SKILL.md
 ```
 
-`README.md` 给人看，`SKILL.md` 给 Agent 执行。安装时只需要导入 `skills/data-minder/`。
+`README.md` is for people; `SKILL.md` is for Agent execution. Import only `skills/data-minder/` to install.
 
-## 验证说明
+## Validation Notes
 
-此版本已做文件结构、元数据和内容一致性静态检查；未完成跨客户端自动触发测试，也没有量化有效性数据。不要将示例当作性能承诺。
+This version has undergone static checks for file structure, metadata and content consistency. Cross-client automatic triggering has not been tested, and no quantitative effectiveness results are available. Do not treat the examples as performance promises.
 
-发布前建议在你实际使用的客户端，分别检查：
+Before relying on it in your client, check:
 
-1. 改版与复盘场景是否自然触发，而不是见到关键词就触发。
-2. 首次提醒是否只有一个子问题，并且允许继续原任务。
-3. 用户拒绝深入后是否停止追问。
-4. 审美与文案润色场景是否不误触发。
-5. 是否避免擅自取数、编数、定目标或给出未经验证的因果结论。
+1. Planning and retrospective scenarios trigger naturally, rather than from keywords alone.
+2. The first nudge asks only one subquestion and lets the original task continue.
+3. Follow-ups stop when the user declines a deeper discussion.
+4. Aesthetic choices and copy polishing do not cause false triggers.
+5. The Agent avoids unauthorized retrieval, invented numbers, target setting and unverified causal conclusions.
 
-如要判断此 Skill 是否有帮助，可用相同输入分别在启用与未启用时进行比较；重点看相关性、追问负担、退出是否被尊重，以及是否减少无证据结论。当前没有这些比较结果，不宣称效果已经得到验证。
+To evaluate whether it helps, compare the same inputs with and without the Skill. Look at relevance, follow-up burden, respect for opting out and unsupported conclusions. Those comparisons are not currently available, so effectiveness is not claimed to be established.
 
-## 分享与再分发
+## Sharing and Redistribution
 
-本仓库只分享 Skill 指令与使用说明，不包含真实业务数据或用户对话。
+This repository shares only Skill instructions and usage guidance, not real business data or user conversations.
 
-再分发时请保留 MIT 许可证和版权声明；提交案例时请脱敏，不上传凭证、个人明细或未经授权的材料。
+Retain the MIT License and copyright notice when redistributing. De-identify submitted examples; do not upload credentials, personal-level records or materials you are not authorized to share.
 
-## 参与改进
+## Contributing
 
-欢迎通过 Issue 提供具体的误触发、追问过多、退出后继续追问或无证据结论案例。提交案例前请移除敏感信息。
+Issues with concrete examples of false triggers, excessive questioning, follow-ups after opting out or unsupported conclusions are welcome. Remove sensitive information before submitting an example.
 
-修改时请优先保持三点：**轻提醒、尊重退出、不给伪确定性**。新增示例应同时包含应该触发和不应该触发的场景。
+Prioritize three qualities when making changes: **gentle nudges, respect for opting out and no false certainty**. New examples should cover both situations that should trigger the Skill and situations that should not. Keep the English and Chinese versions aligned when changing behavior or examples.
 
-## 许可证
+## License
 
-本项目采用 [MIT License](LICENSE)。
+This project is licensed under the [MIT License](LICENSE).
