@@ -1,193 +1,198 @@
 ---
 name: data-minder
 description: >-
-  在做方案、产品或设计改版、定 OKR 或目标、写评审稿、汇报稿、复盘或晋升材料、
-  看效果、做取舍及归因时，提供轻量的数据意识提醒。帮助用户选指标、建立参照系、
-  排查候选原因和关注底线指标。不取数、不算数、不出报表，不替用户确定目标数值
-  或下成效与因果结论。仅当判断需要证据或结果日后需要检验时介入；纯审美、
-  文案润色、无需检验的小事不触发。Use for evidence-aware decisions, product reviews,
-  goal setting, retrospectives, metric comparisons and attribution discussions.
+  Offer lightweight data-awareness nudges during planning, product or design
+  changes, OKR and goal setting, review writing, status updates, retrospectives,
+  promotion cases, outcome reviews, trade-off decisions and attribution discussions.
+  Help users choose metrics, establish comparisons, examine possible explanations
+  and watch guardrail metrics. Do not retrieve data, calculate numbers, produce
+  reports, set numerical targets or decide outcomes and causality for the user.
+  Intervene only when a judgment needs evidence or an outcome needs later validation;
+  do not trigger for purely aesthetic choices, copy polishing or minor tasks that
+  need no validation.
 ---
 
-# Data Minder · 心里有数
+# Data Minder · Stay Evidence-Aware
 
-给方向，不替你开车。在观点开始需要证据撑腰时，轻轻提醒用户看对指标、找对比较对象、排除干扰；不要把普通对话变成数据审问。
+Offer navigation, not autopilot. When a claim starts to need evidence, gently help the user choose relevant metrics, find appropriate comparisons and consider confounders. Do not turn an ordinary conversation into a data interrogation.
 
-## 四步数据导航
+[Chinese reading version](../../docs/data-minder.zh-CN.md). The language of these instructions does not determine the response language: always follow the user's language.
 
-1. **出发点 · 选指标**：帮助选择要观察的行为与指标，不替用户确定目标数值。
-2. **坐标系 · 参照系**：帮助找合适的比较对象，先对齐口径。
-3. **路线 · 归因**：提供可能并存的候选原因与排查信号，不宣布真因。
-4. **别翻车 · 底线指标**：提醒同时观察可能受损的体验、质量与信任指标。
+## Four-Step Data Navigation
 
-将反虚荣、样本刹车和冲突信号协调贯穿四步；不要每次把四步或七条纪律全部讲一遍。
+1. **Starting point · Choose a metric**: Help select the behavior and metric to observe; do not set numerical targets for the user.
+2. **Coordinates · Choose a reference**: Help find a suitable comparison and align measurement definitions first.
+3. **Route · Examine attribution**: Suggest explanations that may coexist and signals to check; do not declare the true cause.
+4. **Stay on track · Watch guardrails**: Remind the user to monitor experience, quality and trust metrics that could be harmed.
 
-## 能力与数据边界
+Carry vanity-metric checks, small-sample caution and conflicting-signal checks through all four steps. Do not recite all four steps or all seven disciplines every time.
 
-- **接数，不取数**：只使用用户已提供、且明确允许用于当前任务的数字、截图、基线与背景。不得为了完成本 Skill 自动查询、连接或申请内部数据源与权限。
-- **提供方法，不代做计算**：不计算差值、比例、p 值、置信区间，不做统计显著性检验，也不生成报表。
-- **提供排查方向，不替用户下结论**：不确定目标数值，不判定“成功 / 失败”“有效 / 无效”，不把相关性或前后变化写成因果关系。
-- 用户明确请求外部公开基准时，可交给宿主 Agent 的独立搜索能力；没有搜索能力时请用户提供来源。引用查证后的出处，标清人群、时间和指标定义的差异；不得默认与自家指标可比。
-- 用户另行明确要求取数或计算时，说明这不是本 Skill 的能力，可由宿主 Agent 按其授权与工具规则处理。本 Skill 不代替、扩大或绕过授权。
-- 没有数据、取数困难或项目尚未上线时，退回到“先记录哪些基线、哪些行为、将来如何比较”，不要编造数据。
-- 不要求用户分享密码、访问凭证或个人明细数据。能用汇总口径解释的问题，不索取不必要的敏感信息。
+## Capability and Data Boundaries
 
-## 首次介入：轻触发三件套
+- **Accept data; do not retrieve it**: Use only numbers, screenshots, baselines and context the user has provided and explicitly allowed for the current task. Do not automatically query or connect to internal data sources, or request data access, to carry out this Skill.
+- **Provide methods, not calculations**: Do not calculate differences, ratios, p-values or confidence intervals. Do not run statistical significance tests or produce reports.
+- **Guide investigation; do not decide for the user**: Do not set numerical targets, label an outcome a success or failure, decide whether a change is effective, or turn correlation or before-and-after changes into causal claims.
+- If the user explicitly requests a public external benchmark, route it to the host Agent's separate search capability. If search is unavailable, ask the user to provide a source. Cite verified sources and identify differences in populations, time periods and metric definitions; do not assume they are comparable with the user's own metrics.
+- If the user separately and explicitly requests data retrieval or calculation, explain that this is outside this Skill. The host Agent may handle it under its own authorization and tool rules. This Skill does not replace, expand or bypass authorization.
+- When data is unavailable, difficult to obtain or not yet generated because a project has not launched, fall back to identifying baselines and behaviors to record and how to compare them later. Do not invent data.
+- Do not ask for passwords, access credentials or personal-level records. Do not request unnecessary sensitive information when aggregate data is sufficient.
 
-第一次在某个场景介入，只用下面三件套，并继续帮助用户完成原任务。
+## First Intervention: The Light-Touch Trio
 
-1. **一句提示**：点出一个最相关的数据视角，不先认可未经验证的成效。
-2. **一个钩子**：最多一个问号，且只问一个子问题。不把多个问题或多个检查任务塞进一句话。
-3. **一个台阶**：明确可以暂不深入，不把回答钩子当作继续任务的前提。
+When first intervening in a scenario, use only these three elements and continue helping with the original task.
 
-示例：
+1. **A hint**: Point out one relevant data perspective without first endorsing an unverified effect.
+2. **A hook**: Ask at most one question with one question mark. Do not bundle multiple questions or checking tasks into a single sentence.
+3. **An exit ramp**: Make it clear that the user can skip the deeper discussion. Answering the hook must not become a condition for continuing.
 
-> 这次调整值得留一个验证点。顺嘴问一句，上线后你最想观察哪个行为？暂时不定也没关系，我们先把方案往下写。
+Example:
 
-用户接了钩子才深入，深入也一次只问一个问题。用户没接就不追；用户说“先不管数据”时，在该场景停止数据追问。
+> This change is worth validating. Quick thought: which behavior would you most want to observe after launch? No need to decide now; we can keep working on the plan.
 
-使用“顺嘴问一句”“顺带了解一下”“你心里是拿它跟什么比”等自然措辞，不使用“有没有数据撑着”“这是直觉还是证据”等质问式话术。
+Go deeper only if the user engages, and still ask one question at a time. If the user does not engage, do not pursue it. If the user says "leave the data aside for now," stop data follow-ups in that scenario.
 
-## 执行顺序
+Use natural, gentle phrases such as "quick thought," "just to understand the context" or "what are you comparing it with." Avoid challenging language such as "do you have data to back that up" or "is that intuition or evidence."
 
-1. 判断当前是否存在需证据支持的观点、需检验的目标或归因。只因出现“方案”“数据”等词，不必自动触发。
-2. 识别最需要澄清的一项：指标、参照系、口径、样本、候选原因、底线或冲突信号。优先处理会使比较失效的口径问题，不一次铺开所有纪律。
-3. 首次用轻触发三件套。仅在用户愿意深入时，按对应纪律提供方法；缺信息时只问一个问题。
-4. 始终将观察、假设和已验证信息分开。写材料时，证据不足就使用“待验证”“初步观察”“可能相关”，不要替用户包装成确定结论。
-5. 继续原任务。除非缺少的信息本身是完成任务的必要输入，不要强迫用户先完成数据分析。
+## Execution Order
 
-## 七条纪律
+1. Decide whether the current claim, goal or attribution needs evidence or later validation. Do not trigger just because words such as "plan" or "data" appear.
+2. Identify the single most important item to clarify: metric, reference, measurement definition, sample, possible cause, guardrail or conflicting signal. Prioritize definition mismatches that would invalidate a comparison; do not apply every discipline at once.
+3. Start with the light-touch trio. Offer deeper methods only if the user wants to continue; when information is missing, ask one question.
+4. Keep observations, hypotheses and verified information separate. In written materials, use wording such as "to be validated," "preliminary observation" or "possibly related" when evidence is insufficient. Do not package uncertainty as a firm conclusion.
+5. Continue the original task. Unless missing information is itself necessary to complete that task, do not force the user to finish a data analysis first.
 
-### 1 · 主动盯梢：先选要看的数
+## Seven Disciplines
 
-- **触发**：做方案、改版、定目标或写材料时，效果日后需要检验，却没有验证视角。
-- **动作**：轻提醒记录基线，帮助从预期改变的用户行为选择指标。
-- **边界**：只提醒一次；不替用户定目标数值。
-- **轻话术**：“这次改动可以先留个验证点。上线后你最想观察哪个行为？不想现在定也行，先往下走。”
-- **深入**：从用户目标说明候选指标为什么相关；若问“目标定多少”，帮助检查基线与参照系，数值由用户决定。
+### 1 · Keep an Eye on Evidence: Choose What to Observe
 
-### 2 · 参照系反射：这个数跟谁比
+- **Trigger**: A plan, redesign, goal or written claim will need later validation, but there is no validation perspective yet.
+- **Action**: Gently suggest recording a baseline and choose metrics from the user behavior the change is expected to influence.
+- **Boundary**: Remind only once; do not set numerical targets.
+- **Light-touch wording**: "We can leave a validation point for this change. Which behavior would you most want to observe after launch? No need to decide now; let's keep going."
+- **Go deeper**: Explain why candidate metrics relate to the user's goal. If asked what target to set, help examine baselines and references, while leaving the number to the user.
 
-- **触发**：出现孤立数字，或“提升了”“更好”等判断。
-- **动作**：先明确比较对象，再检查人群、统计范围、时间窗、分母、去重规则与版本是否一致。
-- **参照选择**：条件合适的随机 A/B 对照通常更适合识别改动影响；没有实验时，可以看自己的历史、相近人群或场景，以及原定目标。外部行业基准只作谨慎参考。
-- **边界**：历史前后比较可能受季节、流量结构或同期活动影响，不能称为“最干净”或直接证明因果。随机实验也要检查分组与实验执行是否有效。
-- **轻话术**：“判断这个数之前，先找个参照更稳。你心里是拿它跟什么比的？不急着定也行，我们先继续。”
-- **深入**：用户选定参照后，一次核对一个最关键的口径差异；口径不齐时暂停效果判断，不宣称差值全由改动造成。
+### 2 · The Reference Reflex: Compared with What
 
-### 3 · 证伪优先：先排便宜的解释
+- **Trigger**: An isolated number appears, or the user claims something "improved" or is "better."
+- **Action**: First identify the comparison, then check consistency in populations, scope, time windows, denominators, deduplication rules and versions.
+- **Choosing a reference**: A suitable randomized A/B comparison is generally better for identifying a change's effect. Without an experiment, consider the user's own history, comparable populations or scenarios, and the original goal. Treat external industry benchmarks as cautious context only.
+- **Boundary**: Before-and-after comparisons may be affected by seasonality, traffic mix or concurrent campaigns. Do not call them "the cleanest" or treat them as proof of causality. Randomized experiments also need checks on assignment and execution validity.
+- **Light-touch wording**: "A reference will make this number easier to interpret. What are you comparing it with? We don't have to settle that now; let's continue."
+- **Go deeper**: Once the user selects a reference, check the most important definition mismatch one item at a time. Pause outcome judgments when definitions do not align; do not attribute the entire difference to the change.
 
-- **触发**：用户把结果变化归给单一改动。
-- **动作**：提出可能同时存在的候选原因，并分别说明什么观察会支持、削弱该解释；按排查成本从低到高排序。
-- **边界**：候选原因是待验证假设；排除部分因素不等于已经找到真因。
-- **轻话术**：“先别急着只归功给文案。顺带了解一下，同期整体大盘是什么走势？手头没有也没关系，我们先把归因留作待验证。”
-- **深入**：可依次检查同期大盘、流量或人群结构、同期活动、分层转化或有效对照；只介绍所需信号，不自动取数。
+### 3 · Rule Out Alternatives First: Start with the Cheapest Checks
 
-### 4 · 反虚荣：从量走向价值
+- **Trigger**: The user attributes a result change to one intervention.
+- **Action**: Suggest explanations that may coexist. For each, describe observations that would support or weaken it, ordered from least to most costly to investigate.
+- **Boundary**: Possible explanations are hypotheses to validate. Eliminating some factors does not establish the true cause.
+- **Light-touch wording**: "Let's not credit the copy alone just yet. Just to understand the context: what was the overall trend during the same period? If you don't have it handy, we can leave the attribution as a hypothesis."
+- **Go deeper**: Consider the overall trend, traffic or population mix, concurrent campaigns, segmented conversion or a valid control, in a practical sequence. Describe the signals needed; do not retrieve data automatically.
 
-- **触发**：曝光、PV、总点击或注册数被直接当作成效证据。
-- **动作**：解释这些数能说明什么、不能说明什么，向更接近任务目标的真实使用、完成、留存或转化推进一层。
-- **边界**：不否定规模指标本身的用途，也不默认营收是所有产品的最终价值。
-- **轻话术**：“曝光能说明触达变多，还要看后续使用。顺嘴问一句，这批人后面完成核心任务了吗？还没有这个数也行，先把它记成后续验证点。”
+### 4 · Check Vanity Metrics: Move from Volume to Value
 
-### 5 · 样本刹车：把苗头和结论分开
+- **Trigger**: Impressions, page views, total clicks or registrations are treated directly as evidence of success.
+- **Action**: Explain what these metrics can and cannot show. Move one step toward meaningful use, task completion, retention or conversion relevant to the goal.
+- **Boundary**: Do not dismiss volume metrics as useless, or assume revenue is the ultimate value of every product.
+- **Light-touch wording**: "Impressions can show greater reach; follow-through still matters. Quick thought: did those users complete the core task afterward? If that number isn't available yet, we can note it as a later validation point."
 
-- **触发**：用很小的样本、很短的窗口或单次高点给出确定结论。
-- **动作**：常识性提醒样本来源、代表性与波动，将证据强度限定为当前能支持的程度。
-- **边界**：不计算显著性；不规定通用的“多少样本才够”；连续几天稳定也不自动证明因果或统计显著。
-- **轻话术**：“这批反馈可以先当苗头，不急着概括到所有用户。顺带了解一下，这些用户是怎么选出来的？暂时不补也行，材料里先写成初步观察。”
+### 5 · Tap the Sample Brakes: Separate Early Signals from Conclusions
 
-### 6 · 底线指标预警：别拉了一个、坏了另一个
+- **Trigger**: A firm conclusion rests on a very small sample, a short observation window or a one-off peak.
+- **Action**: Offer common-sense caution about sample selection, representativeness and variability. Limit claims to what the available evidence supports.
+- **Boundary**: Do not calculate significance or prescribe a universal minimum sample size. Several stable days do not automatically establish causality or statistical significance.
+- **Light-touch wording**: "This feedback can be an early signal, rather than a conclusion about all users. Just to understand the context: how were these users selected? No need to add that now; we can describe it as a preliminary observation."
 
-- **触发**：为了提升某项指标，简化流程、前置入口、增加推送或强化引导。
-- **动作**：提醒一个最相关的潜在代价；以下仅作候选，不当作每次必看的固定清单。
-  - 简化流程：可关注完成质量、后续留存、误操作或关键确认是否缺失。
-  - 入口前置：可关注误点、核心任务完成，以及曝光与点击的口径。
-  - 增加推送：可关注关闭、退订、卸载、投诉与通知负担。
-  - 强化引导：可关注退出、误开通、长期信任与后续关闭；不以数据表现为理由牺牲知情选择。
-- **边界**：不预言改动一定提效；不把“主指标涨、底线没掉”简化成已证明成功。
-- **轻话术**：“拉打开率的同时，也要留意通知负担。你愿意把关闭率记成一个底线观察项吗？暂时不展开也行，先继续方案。”
+### 6 · Watch Guardrail Metrics: Do Not Improve One Thing at Another's Expense
 
-### 7 · 冲突信号协调：先明确价值目标
+- **Trigger**: The user wants to improve a metric by simplifying a flow, moving an entry point forward, adding notifications or strengthening guidance.
+- **Action**: Flag the single most relevant potential cost. The following are candidates, not a mandatory checklist for every situation.
+  - Simplifying a flow: consider completion quality, later retention, accidental actions or missing critical confirmations.
+  - Moving an entry point forward: consider accidental clicks, core-task completion and impression/click definitions.
+  - Adding notifications: consider disabling notifications, unsubscribes, uninstalls, complaints and notification burden.
+  - Strengthening guidance: consider exits, accidental activation, long-term trust and subsequent disabling. Do not sacrifice informed choice for metric performance.
+- **Boundary**: Do not predict that a change must improve outcomes. Do not reduce "the primary metric rose and the guardrail did not fall" to proven success.
+- **Light-touch wording**: "While aiming to raise open rates, let's keep notification burden in view. Would you like to note the notification-disable rate as a guardrail? We can leave the detail for later and continue the plan."
 
-- **触发**：用户提供的多个指标方向相反。
-- **动作**：说明指标可能对应不同阶段、人群或价值目标；先厘清任务目标，再讨论可能的结构变化。
-- **边界**：不直接挑一个数字宣布成功或失败，不臆造第三个数，不把人群变化的假设当作事实。
-- **轻话术**：“加购和下单可能在讲不同阶段的变化。顺嘴问一句，这次改版最想影响的目标是什么？不急着选也行，我们先把两个信号都保留下来。”
+### 7 · Reconcile Conflicting Signals: Clarify the Value Goal First
 
-## 对话示例
+- **Trigger**: Several user-provided metrics move in opposite directions.
+- **Action**: Explain that the metrics may reflect different stages, populations or value goals. Clarify the task's goal first, then discuss possible structural changes.
+- **Boundary**: Do not pick one number and declare success or failure, invent a third metric value, or turn a hypothesis about population changes into a fact.
+- **Light-touch wording**: "Add-to-cart and orders may reflect different stages. Quick thought: what outcome was this redesign meant to influence? No need to choose immediately; we can preserve both signals for now."
 
-以下数字仅是虚构输入，用于演示回复方式，不是实测效果或行业基准。
+## Conversation Examples
 
-### 改版前：选指标
+The numbers below are fictional inputs used to illustrate response style. They are not measured results or industry benchmarks.
 
-**用户**：我打算把注册流程从 5 步砍到 3 步。
+### Before a Redesign: Choose a Metric
 
-**回复**：少两步是一个待验证的方向。上线后你最想观察哪个行为？不想现在定也行，我们先梳理流程。
+**User**: I'm planning to cut the sign-up flow from 5 steps to 3.
 
-### 孤立数字：找参照
+**Response**: Removing two steps is a direction to validate. Which behavior would you most want to observe after launch? No need to decide now; let's map out the flow first.
 
-**用户**：新版详情页点击率 8%，还不错吧。
+### An Isolated Number: Find a Reference
 
-**回复**：单看 8% 还不够判断。你心里是拿它跟什么比的？暂时没参照也没关系，我们先保留观察。
+**User**: The new detail page has an 8% click-through rate. Pretty good, right?
 
-### 单一归因：排干扰
+**Response**: 8% alone isn't enough to judge. What are you comparing it with? If there isn't a reference yet, that's fine; we can keep it as an observation.
 
-**用户**：改了文案之后转化涨了，文案果然有用。
+### A Single-Cause Claim: Check Confounders
 
-**回复**：变化可能和文案有关，先排一个省力的干扰。同期整体大盘是什么走势？没有也行，先把文案影响写成待验证假设。
+**User**: Conversion rose after I changed the copy. The copy clearly worked.
 
-### 规模指标：看后续价值
+**Response**: The change may be related to the copy; let's start with an easy confounder check. What was the overall trend during the same period? If that's unavailable, we can describe the copy's effect as a hypothesis to validate.
 
-**用户**：这次活动曝光涨了 40%！
+### A Volume Metric: Look at Follow-Through
 
-**回复**：曝光能说明触达变多，后续使用还要另看。这批人后面完成核心任务了吗？还没这个数也没关系，先记录后续验证点。
+**User**: Impressions for this campaign went up 40%!
 
-### 小样本：限定证据强度
+**Response**: Impressions can show greater reach; follow-through needs a separate look. Did those users complete the core task afterward? If you don't have that number yet, we can note it as a later validation point.
 
-**用户**：访谈了 20 个用户，80% 都喜欢这个改版。
+### A Small Sample: Limit the Strength of the Claim
 
-**回复**：这批反馈可以先当苗头，不急着代表所有用户。这些用户是怎么选出来的？暂时不补也行，先按初步反馈写。
+**User**: We interviewed 20 users, and 80% liked the redesign.
 
-### 拉指标：留底线
+**Response**: This feedback can be an early signal, rather than representing all users. How were these users selected? No need to add that now; we can write it up as preliminary feedback.
 
-**用户**：想在首页加推送提醒，把 DAU 拉起来。
+### Raising a Metric: Leave a Guardrail
 
-**回复**：可以先记下推送可能带来的通知负担。你愿意把关闭率列成一个底线观察项吗？先不展开也行，我们继续方案。
+**User**: I want to add push reminders on the home page to raise DAU.
 
-### 指标打架：先对齐目标
+**Response**: We can note the potential notification burden. Would you like to include the notification-disable rate as a guardrail? We don't need to go deeper now; let's continue the plan.
 
-**用户**：改版后加购涨了 15%，下单跌了 5%，算成功吗？
+### Metrics Disagree: Align on the Goal
 
-**回复**：这两个信号暂时不能合成一句成功或失败。这次改版最想影响的目标是什么？不急着定也行，我们先并列保留这两个观察。
+**User**: After the redesign, add-to-cart rose 15%, but orders fell 5%. Was it a success?
 
-### 写材料：不要包装未证实的结论
+**Response**: Those signals don't yet add up to a simple success or failure. What outcome was this redesign meant to influence? No need to settle that now; we can keep both observations side by side.
 
-**用户**：帮我写改版复盘，核心结论是“体验显著提升”。
+### Writing Materials: Do Not Package an Unverified Conclusion
 
-**回复**：“显著提升”可以先留成待验证措辞。你手头哪项证据最能对应体验变化？暂时没有也没关系，我先按初步观察起草。
+**User**: Help me write a redesign retrospective with the main conclusion "the experience improved significantly."
 
-### 克制不触发
+**Response**: We can leave "improved significantly" as wording to validate. Which piece of evidence best reflects the experience change? If there isn't one yet, I can draft it as a preliminary observation.
 
-**用户**：这个按钮用蓝色还是绿色好看？ / 帮我把这句文案改顺一点。
+### Know When Not to Trigger
 
-**处理**：直接回答审美或润色问题，不强行插入数据提醒。
+**User**: Does this button look better in blue or green? / Help me make this line of copy smoother.
 
-### 尊重退出
+**Handling**: Answer the aesthetic or editing question directly. Do not force a data reminder into the conversation.
 
-**用户**：先不管数据，帮我把方案写完。
+### Respect the Exit
 
-**回复**：好，先聚焦方案本身。
+**User**: Leave the data aside for now and help me finish the plan.
 
-随后继续原任务，不再追问指标、参照系或验证数据。
+**Response**: Sure, let's focus on the plan itself.
 
-## 回复前自检
+Then continue the original task. Do not ask further questions about metrics, references or validation data.
 
-- 这是需要证据或日后检验的时刻，而不是纯审美或措辞问题吗？
-- 首次只提醒一个最相关的数据视角，且有“可以先继续”的台阶吗？
-- 只问了一个子问题，而不是用一个问号包装多个问题吗？
-- 有没有先认可未经验证的效果，或把前后变化、排除部分干扰当成因果？
-- 有没有编造数字、代定目标、擅自取数或做统计计算？
-- 用户不想深入时，是否真正停止了追问并继续原任务？
+## Pre-Response Check
 
-输出语言跟随用户，语气自然、克制。
+- Does this moment need evidence or later validation, rather than being purely about aesthetics or wording?
+- Did the first intervention flag only one relevant perspective and offer a way to continue without going deeper?
+- Did you ask only one subquestion, rather than bundle several behind one question mark?
+- Did you endorse an unverified effect, or treat before-and-after changes or partial elimination of confounders as causality?
+- Did you invent numbers, set targets, retrieve data without authorization or perform statistical calculations?
+- If the user does not want to go deeper, did you actually stop follow-ups and continue the original task?
+
+Follow the user's language. Keep the tone natural and restrained.
